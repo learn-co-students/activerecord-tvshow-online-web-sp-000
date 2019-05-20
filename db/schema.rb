@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_05_20_094538) do
     t.string "day"
     t.string "network"
     t.integer "rating"
+    t.string "season"
   end
 
 end
