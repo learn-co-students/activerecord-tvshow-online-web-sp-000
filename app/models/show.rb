@@ -25,7 +25,8 @@ def self.popular_shows
 end
 
 def self.shows_by_alphabetical_order
-  Show.all.map{|show| show}.sort_by{|show| show.name}
+  # Show.all.map{|show| show}.sort_by{|show| show.name}
+  self.order(:name)
 end
 
 
