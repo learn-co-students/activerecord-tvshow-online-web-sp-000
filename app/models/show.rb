@@ -20,7 +20,7 @@ end
   end
 
   def self.ratings_sum
-    self.count(:rating)
+    self.sum(:rating)
     #  returns the sum of all of the ratings.
   end
 
