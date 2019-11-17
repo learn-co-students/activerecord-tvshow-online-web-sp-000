@@ -9,4 +9,3 @@ class CreateShows < ActiveRecord::Migration[5.2]
     end
   end
 end
-#once this is migrated, do second migration file 002_add_season_to_shows.rb, add column season (string)
