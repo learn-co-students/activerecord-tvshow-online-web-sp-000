@@ -1,32 +1,34 @@
 class Show < ActiveRecord::Base
-  attr_accessor :name, :network, :day, :rating, :season
+  attr_accessor :season
 
   def Show::highest_rating
-    Show.maximum(:highest_rating).value
-  end
-
-  def Show::most_popular_show
     Show.maximum(:rating)
   end
 
-  def Show::lowest_rating
-    Show.minimum(:rating).value
+  def Show::most_popular_show
+    Show.order(rating: :desc).first
   end
 
-  def Show::least_popular_show
+  def Show::lowest_rating
     Show.minimum(:rating)
   end
 
-  def ratings_sum
+  def Show::least_popular_show
+    Show.order(rating: :asc).first
+  end
+
+  def Show::ratings_sum
+    #returns the sum of all of the ratings
     Show.sum(:rating)
   end
 
-  def popular_shows
-    Show.where(":rating > ?" , 5)
+  def Show::popular_shows
+    #returns an array of all of the shows that have a rating greater than 5
+    Show.where("rating > 5")
   end
 
-  def shows_by_alphabetical_order
-    Show.order(:name)
+  def Show::shows_by_alphabetical_order
+    Show.order(name: :asc)
   end
 
 end
