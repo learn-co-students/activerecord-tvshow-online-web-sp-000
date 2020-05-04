@@ -20,13 +20,10 @@ class Show < ActiveRecord::Base
     end
 
     def self::popular_shows
-        self.where("rating > 5")
+        self.where("rating >= ?", 5)
     end
 
     def self::shows_by_alphabetical_order
-        self.order(name: :asc)
+        self.order(:name)
     end
 end
-
-# Client.where(first_name: 'Ryan').count
-# SELECT COUNT(*) FROM clients WHERE (first_name = 'Ryan')
