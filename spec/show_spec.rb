@@ -14,6 +14,7 @@ describe Show do
   end
 
   describe "attributes" do
+    binding.pry
     it "has data attributes given to it from a migration file" do
     #TODO: You'll need to create a new migration to add
     #the necessary columns to the shows table
