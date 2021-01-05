@@ -48,7 +48,7 @@ that will help you pass these tests:
 
 - [Calculations](http://guides.rubyonrails.org/active_record_querying.html#calculations)
 - [Ordering](http://guides.rubyonrails.org/active_record_querying.html#ordering)
-- [Conditions](http://guides.rubyonrails.org/active_record_querying.html#conditions)
+- [Conditions](http://guides.rubyonrails.org/ active_record_querying.html#conditions)
 
 ## Instructions
 
