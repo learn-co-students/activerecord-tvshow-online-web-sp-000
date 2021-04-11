@@ -3,6 +3,7 @@
 1. Create a table using ActiveRecord.
 2. Use Active Record's querying methods.
 
+
 ## Overview
 
 In this lab, we'll be working in a TV show domain. We have a TV show model, the
