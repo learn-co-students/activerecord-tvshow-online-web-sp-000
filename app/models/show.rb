@@ -25,5 +25,6 @@ end
 end
 
   def self.shows_by_alphabetical_order
-    Show.
+    Show.order(:name)
+end
 end
